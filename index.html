@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML card</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "GT Eesti Display", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+        
+        main{
+            font-style: "GT Eesti Display";
+            font-weight: 500;
+            margin: 30px auto;
+            width: 260px;
+            border: solid black 1px;
+            border-radius: 10px;
+            border-color: #cfcfcf;
+            padding: 10px;
+        }
+
+        .div1{
+            margin-bottom: 80px;
+        }
+
+        .free{
+            font-size: 60px;
+            margin-bottom: 40px;
+            font-weight: 500;
+        }
+
+        .button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sign-up{
+            width: 220px;
+            height: 48px;
+            border: solid 1px;
+            border-radius: 30px;
+            background-color: white;
+            font-style: "GT Eesti Display";
+            font-weight: 500;
+        }
+
+        .sign-up:hover{
+            background-color: #eeeeee;
+        }
+
+        .link{
+            text-decoration: none;
+            color: black;
+            padding: 16px 79px;
+            border-radius: 40px;
+        }
+
+        .div2{
+            margin-top: 20px;
+            margin-bottom: 80px;
+        }
+
+        .free2{
+            margin-bottom: 10px;
+        }
+
+        ul{
+            list-style-image: url(./check.svg);
+        }
+
+        .special{
+            border-bottom: solid 1px;
+
+            border-bottom-style: dotted;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="div1">
+            <h3>Free</h3>
+            <p>For individuals or very small teams just getting started with Airtable</p>
+        </div>
+        <p class="free"><strong>Free</strong></p>
+        <div class="button">
+            <button type="button" class="sign-up"><a href="#" class="link">Sign up</a></button>
+        </div>
+        <div class="div2">
+            <p class="free2">Free includes:</p>
+            <ul class="free-services">
+                <li>Unlimited bases</li>
+                <li>Up to 5 creators or editors</li>
+                <li>Unlimited commenter & read-only users</li>
+                <li><span class="special">Interface Designer</span></li>
+                <li>1 <span class="special">extension</span> per base</li>
+                <li>1 sync integration</li>
+                <li>1,200 records per base</li>
+                <li>2GB of attachments per base</li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
